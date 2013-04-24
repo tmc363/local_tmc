@@ -4,7 +4,7 @@
   <remote  name="gh" fetch="git://github.com/" />
 
   <!-- OMAP4 projects -->
-  <project path="kernel/motorola/omap4-kexec-common" name="CyanogenMod/android_kernel_motorola_omap4-common" revision="cm-10.1" />
+  <project path="kernel/motorola/omap4-kexec-common" name="CyanogenMod/android_kernel_motorola_omap4-common" remote="gh"revision="cm-10.1" />
 
   <project path="device/motorola/omap4-kexec-common" name="CyanogenMod/android_device_motorola_omap4-common" revision="cm-10.1" />
   <project path="device/motorola/spyder" name="tmc363/android_device_motorola_spyder" revision="cm-10.1" />
