@@ -1,0 +1,36 @@
+Local manifests for tmc363
+
+Getting Started
+---------------
+
+To get started with Android, you'll need to get
+familiar with [Git and Repo](http://source.android.com/download/using-repo).
+
+Make a build directory:
+
+	mkdir Andoid (or whatever name you choose)
+	cd Android (or the name  you chose)
+	mkdir .repo/local_manifests
+
+To initialize your local repository using the Carbon manifest, use commands like these:
+
+    repo init -u git://github.com/CarbonDev/android.git -b jb2
+
+    For Moto OMAP4
+    curl -L -o .repo/local_manifests/moto-omap4.xml -O -L https://raw.github.com/tmc363/local_tmc/master/moto-omap4.xml
+
+    	( or Download: https://github.com/tmc363/local_tmc/blob/master/moto-omap4.xml
+		and place it in ~/Android/.repo/local_manifests/moto-omap4.xml (or ~/'name you chose'/.repo)
+
+    For Moto qcom
+    curl -L -o .repo/local_manifests/moto-qcom.xml -O -L https://raw.github.com/tmc363/local_tmc/master/moto-qcom.xml
+
+    	( or Download: https://github.com/tmc363/local_tmc/blob/master/moto-qcom.xml
+		and place it in ~/Android/.repo/local_manifests/moto-qcom.xml (or ~/'name you chose'/.repo)
+
+Then to sync up:
+
+    repo sync
+
+**NOTE: You can have multiple manifests but if they have the same git projects but with different branches you
+should go to (your android root)/.repo/local_manifests and rename the one with conflicting projects to .bak**
