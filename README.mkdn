@@ -32,5 +32,16 @@ Then to sync up:
 
     repo sync
 
+Then Build
+
+    . build/envsetup.sh
+
+    Lunch   Choose your poison 
+
+    make carbon -j7 = Run Squisher/Run Opticharger
+
+    make otapackage -j7 = No Squisher/No Opticharger
+
+
 **NOTE: You can have multiple manifests but if they have the same git projects but with different branches you
 should go to (your android root)/.repo/local_manifests and rename the one with conflicting projects to .bak**
