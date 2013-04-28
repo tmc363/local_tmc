@@ -17,7 +17,7 @@ To initialize your local repository using the Carbon manifest, use commands like
     repo init -u git://github.com/CarbonDev/android.git -b jb2
 
     For Moto OMAP4
-    curl -L -o .repo/local_manifests/moto-omap4.xml -O -L https://raw.github.com/tmc363/local_tmc/master/moto-omap4.xml
+    curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 
     	( or Download: https://github.com/tmc363/local_tmc/blob/master/moto-omap4.xml
 		and place it in ~/Android/.repo/local_manifests/moto-omap4.xml (or ~/'name you chose'/.repo)
